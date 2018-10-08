@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               Algorithms for software engineers
 tagline:             Theory and practical aspects
-url:                 https://ira-dushar.github.io/algorithms
+url:                 https://ira-dushar.github.io/algorithms/
 paginate:            1
 baseurl:             ""
 
@@ -18,13 +18,13 @@ sass:
 # About/contact
 author:
   name:              Ira Dushar
-  url:               https://github.com/ira-dushar
+  url:               https://ira-dushar.github.io/algorithms/
   email:             support@gmail.com
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/ira-dushar/algorithms
 
 # Gems
 plugins:
