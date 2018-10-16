@@ -10,8 +10,8 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-73618927-2');
-  </script>	  
-	  
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -72,11 +72,11 @@
 
 	    <p><b>What is it? </b>Free offline course. We are discussing algorithms there. A lot of code assignments and discussions expected. Basic knowledge of at least one programming language required. All code examples will be shown in Python, but you are free to use any programming language for your tasks.</p>
 
-	    <p><b>Who is the lecturer? </b> <a href="https://www.linkedin.com/in/ira-dushar/">Ira Dushar</a> </p>
+	    <p><b>Who is the lecturer? </b> <a class="underlined" href="https://www.linkedin.com/in/ira-dushar/">Ira Dushar</a> </p>
 	 
 		<p><b>When? </b>Each Tuesday and Thursday at 19:30. Starting from October 9th for the next 2 months. Saturday - optional meetup.</p>
 
-		<p><b>Where? </b>Kyiv, Peremohy Ave, 37, Library of Igor Sikorsky Kyiv Polytechnic Institute, 2nd floor, <a href="https://goo.gl/sEoXoA">Student Space Belka</a></p>
+		<p><b>Where? </b>Kyiv, Peremohy Ave, 37, Library of Igor Sikorsky Kyiv Polytechnic Institute, 2nd floor, <a class="underlined" href="https://goo.gl/sEoXoA">Student Space Belka</a></p>
 
 		<p><b>What else? </b>This is not a typical college course. There are no exams, no marks, no control whatsoever. As we will do coding sessions there, it's highly recommended to bring a laptop to meetups. All questions and announcements will go via our Slack channel.</p>
 
@@ -94,16 +94,16 @@
         <h3>Short video to show how it was</h3>
 	<p><iframe width="700" height="393" src="https://www.youtube.com/embed/oQbaxDvVGm4?rel=0&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscree frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="max-width: 100%;"></iframe></p>
 	<h3>Slides</h3>
-	<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/y2zu45R6tYg1Lr" width="700" height="570" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
+	<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/y2zu45R6tYg1Lr" id="slides-frame" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
 	<h3>Code</h3>
-	<p><a href="https://github.com/ira-dushar/algorithms-code/tree/master/Intro">Code examples</a> written on Python are available on the github.</p>
+	<p><a class="underlined" href="https://github.com/ira-dushar/algorithms-code/tree/master/Intro">Code examples</a> written on Python are available on the github.</p>
     </article>
 <hr>
     <article class="post">
     <h2 class="post-title">
         Lecture 2
     </h2>
-	<p><a href="https://github.com/ira-dushar/algorithms-code/tree/master/Lecture2">Code examples</a> are already available on the github</p>
+	<p><a class="underlined" href="https://github.com/ira-dushar/algorithms-code/tree/master/Lecture2">Code examples</a> are already available on the github</p>
    </article>
  <hr>
 </div>
@@ -113,11 +113,25 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2018-10-09T12:21:47+03:00">2018</time>. All rights reserved. Special thanks to <a href="https://www.instagram.com/belka.space/">Student Space Belka</a> for location to host this event.
+          &copy; <time datetime="2018-10-09T12:21:47+03:00">2018</time>. All rights reserved. <br> Special thanks to <a class="underlined" href="https://www.instagram.com/belka.space/">Student Space Belka</a> for location to host this event.
         </small>
       </footer>
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      function updateSlidesFrame() {
+	  var $node = $("#slides-frame");
+	  var w = $node.parent().width();
+	  var h = w * (570/700);
+
+	  $node.prop('width', w);
+	  $node.prop('height', h);
+      }
+
+      $(window).on('resize', updateSlidesFrame);
+      $(updateSlidesFrame);
+    </script>
   </body>
 </html>

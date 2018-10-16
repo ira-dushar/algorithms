@@ -87,3 +87,26 @@ hr {
 .theme h3 {
   margin-top: 1rem;
 }
+
+p > b {
+    color: #ccc;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+a.underlined {
+    text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+	padding: 2em 0.5em;
+    }
+
+    .container {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+    }
+}
